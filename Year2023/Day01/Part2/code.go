@@ -48,7 +48,7 @@ func calculateLine(inputLine string) int {
 	return answer
 }
 
-func calculate(input []string) int {
+func Calculate(input []string) int {
 
 	answer := 0
 	for lineNumber := range input {
