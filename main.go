@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	y2023d02p01 "github.com/lambada/aoc-golang/Year2023/Day02/Part1"
 	"reflect"
 	"strings"
 
@@ -24,6 +25,7 @@ func main() {
 	packages := map[string]interface{}{
 		"y2023d01p1": y2023d01p01.Calculate,
 		"y2023d01p2": y2023d01p02.Calculate,
+		"y2023d02p1": y2023d02p01.Calculate,
 	}
 
 	packageName := "y" + *year + "d" + *day + "p" + *part
