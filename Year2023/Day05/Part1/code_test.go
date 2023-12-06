@@ -22,6 +22,7 @@ func TestParseMapEntry(t *testing.T) {
 			input: "50 98 2",
 			want: MapEntry{
 				sourceStart: 98,
+				sourceEnd:   99,
 				destStart:   50,
 				entryRange:  2,
 			},
@@ -67,6 +68,7 @@ func TestParseAlmanacMaps(t *testing.T) {
 					maps: []MapEntry{
 						{
 							sourceStart: 98,
+							sourceEnd:   99,
 							destStart:   50,
 							entryRange:  2,
 						},
@@ -84,11 +86,13 @@ func TestParseAlmanacMaps(t *testing.T) {
 					maps: []MapEntry{
 						{
 							sourceStart: 98,
+							sourceEnd:   99,
 							destStart:   50,
 							entryRange:  2,
 						},
 						{
 							sourceStart: 50,
+							sourceEnd:   97,
 							destStart:   52,
 							entryRange:  48,
 						},
@@ -105,10 +109,12 @@ func TestParseAlmanacMaps(t *testing.T) {
 					maps: []MapEntry{
 						{
 							sourceStart: 98,
+							sourceEnd:   99,
 							destStart:   50,
 							entryRange:  2,
 						}, {
 							sourceStart: 50,
+							sourceEnd:   97,
 							destStart:   52,
 							entryRange:  48,
 						},
@@ -120,16 +126,19 @@ func TestParseAlmanacMaps(t *testing.T) {
 					maps: []MapEntry{
 						{
 							sourceStart: 15,
+							sourceEnd:   51,
 							destStart:   0,
 							entryRange:  37,
 						},
 						{
 							sourceStart: 52,
+							sourceEnd:   53,
 							destStart:   37,
 							entryRange:  2,
 						},
 						{
 							sourceStart: 0,
+							sourceEnd:   14,
 							destStart:   39,
 							entryRange:  15,
 						},

@@ -1,7 +1,6 @@
 package y2023d06p02
 
 import (
-	_ "embed"
 	"testing"
 )
 
