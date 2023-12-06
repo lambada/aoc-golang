@@ -70,7 +70,7 @@ func TestCalculateInput(t *testing.T) {
 		{
 			name:  "Input",
 			input: "Time:        51     69     98     78\nDistance:   377   1171   1224   1505\n",
-			want:  131376,
+			want:  34123437,
 		},
 	}
 
