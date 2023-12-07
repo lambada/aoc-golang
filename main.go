@@ -11,6 +11,10 @@ import (
 	y2023d04p02 "github.com/lambada/aoc-golang/Year2023/Day04/Part2"
 	y2023d05p01 "github.com/lambada/aoc-golang/Year2023/Day05/Part1"
 	y2023d05p02 "github.com/lambada/aoc-golang/Year2023/Day05/Part2"
+	y2023d06p01 "github.com/lambada/aoc-golang/Year2023/Day06/Part1"
+	y2023d06p02 "github.com/lambada/aoc-golang/Year2023/Day06/Part2"
+	y2023d07p01 "github.com/lambada/aoc-golang/Year2023/Day07/Part1"
+	y2023d07p02 "github.com/lambada/aoc-golang/Year2023/Day07/Part2"
 	"reflect"
 	"strings"
 
@@ -40,6 +44,10 @@ func main() {
 		"y2023d04p2": y2023d04p02.Calculate,
 		"y2023d05p1": y2023d05p01.Calculate,
 		"y2023d05p2": y2023d05p02.Calculate,
+		"y2023d06p1": y2023d06p01.Calculate,
+		"y2023d06p2": y2023d06p02.Calculate,
+		"y2023d07p1": y2023d07p01.Calculate,
+		"y2023d07p2": y2023d07p02.Calculate,
 	}
 
 	packageName := "y" + *year + "d" + *day + "p" + *part
